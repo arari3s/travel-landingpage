@@ -32,6 +32,7 @@ section {
   background-color: none;
 }
 .navbar .nav-wrapper {
+  position: relative;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -51,6 +52,7 @@ section {
 .nav-wrapper .menu-wrapper {
   display: flex;
   gap: 60px;
+  background-color: var(--main-color);
 }
 .nav-wrapper .menu-wrapper .menu {
   display: flex;
@@ -88,5 +90,28 @@ section {
   }
   .menu-wrapper .btn-member {
     padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-wrapper .menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-radius: 10px;
+  }
+  .nav-wrapper .menu-wrapper .menu {
+    display: block;
+  }
+  .menu-wrapper .menu .menu-item {
+    margin: 30px 0;
+  }
+  .menu .menu-item .menu-link {
+    color: #ffffff;
   }
 }
