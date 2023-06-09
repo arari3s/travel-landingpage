@@ -29,10 +29,9 @@ section {
   max-width: 1500px;
 }
 .navbar {
-  background-color: darkorange;
+  background-color: none;
 }
 .navbar .nav-wrapper {
-  background-color: antiquewhite;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -75,4 +74,19 @@ section {
   background-color: var(--second-color);
   padding: 25px 25px;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .nav-wrapper {
+    padding: 0 30px;
+  }
+  .nav-wrapper .menu-wrapper .menu {
+    gap: 40px;
+  }
+  .menu-wrapper .menu .menu-link {
+    font-size: 1rem;
+  }
+  .menu-wrapper .btn-member {
+    padding: 20px 20px;
+  }
 }
